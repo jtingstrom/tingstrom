@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Kontakt – Jan Tingström</title>
+  <meta name="description" content="Kontakta Jan Tingström – författare till Att se den som är sjuk.">
+  <meta name="keywords" content="kontakt Jan Tingström, att leva med cancer, cancerbok">
+  <meta name="author" content="Jan Tingström">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.tingstrom.se/kontakt.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kontakt – Jan Tingström">
+  <meta property="og:description" content="Kontakta Jan Tingström – författare till Att leva med cancer.">
+  <meta property="og:url" content="https://www.tingstrom.se/kontakt.html">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:locale:alternate" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kontakt – Jan Tingström">
+  <meta name="twitter:description" content="Kontakta Jan Tingström – författare till Att leva med cancer.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --warm-dark: #2E1A0E;
+      --warm-mid: #7C4A1E;
+      --warm-orange: #E8833A;
+      --warm-gold: #F5C842;
+      --warm-cream: #FDF6EC;
+      --warm-light: #FEF9F3;
+      --text-dark: #2C1810;
+      --text-mid: #5C3D2E;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; background: var(--warm-light); color: var(--text-dark); font-size: 18px; line-height: 1.8; width: 100%; overflow-x: hidden; }
+
+    .lang-bar { position: fixed; top: 16px; right: 16px; z-index: 999; display: flex; gap: 6px; }
+    .lang-btn { background: rgba(253,246,236,0.95); border: 2px solid var(--warm-orange); color: var(--warm-mid); font-family: 'Lato', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; padding: 6px 14px; border-radius: 20px; cursor: pointer; transition: all 0.2s; text-transform: uppercase; }
+    .lang-btn.active, .lang-btn:hover { background: var(--warm-orange); color: white; border-color: var(--warm-orange); }
+    .back-btn { background: rgba(253,246,236,0.95); border: 2px solid var(--warm-mid); color: var(--warm-mid); font-family: 'Lato', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; padding: 6px 14px; border-radius: 20px; cursor: pointer; transition: all 0.2s; text-transform: uppercase; text-decoration: none; }
+    .back-btn:hover { background: var(--warm-mid); color: white; }
+
+    [data-lang] { display: none; }
+    body.sv [data-lang="sv"] { display: block; }
+    body.en [data-lang="en"] { display: block; }
+    [data-lang-inline] { display: none; }
+    body.sv [data-lang-inline="sv"] { display: inline; }
+    body.en [data-lang-inline="en"] { display: inline; }
+
+    .hero { min-height: 40vh; background: linear-gradient(135deg, #2E1A0E 0%, #7C4A1E 50%, #E8833A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 30px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%); top: -100px; right: -100px; }
+    .hero-label { font-weight: 300; font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,200,66,0.8); margin-bottom: 20px; animation: fadeUp 1s ease forwards 0.3s; opacity: 0; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 4rem); color: #FDF6EC; line-height: 1.15; margin-bottom: 16px; animation: fadeUp 1s ease forwards 0.6s; opacity: 0; }
+    .hero-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(0.95rem, 2vw, 1.2rem); color: rgba(253,246,236,0.65); max-width: 500px; animation: fadeUp 1s ease forwards 0.9s; opacity: 0; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    .content { max-width: 700px; margin: 0 auto; padding: 60px 30px; }
+    .section-label { font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-orange); font-weight: 700; margin-bottom: 16px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--warm-dark); line-height: 1.2; margin-bottom: 32px; }
+    p { color: var(--text-mid); margin-bottom: 20px; font-weight: 300; }
+
+    /* FORM */
+    .form-card { background: var(--warm-cream); border-radius: 16px; padding: 48px 40px; border-left: 4px solid var(--warm-orange); box-shadow: 0 4px 30px rgba(46,26,14,0.06); }
+
+    .form-group { margin-bottom: 24px; }
+    .form-group label { display: block; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: var(--warm-mid); margin-bottom: 8px; }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid rgba(124,74,30,0.2);
+      border-radius: 8px;
+      background: white;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      color: var(--text-dark);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--warm-orange); }
+    .form-group textarea { height: 160px; resize: vertical; }
+
+    .submit-btn {
+      background: var(--warm-orange);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 40px;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      width: 100%;
+    }
+    .submit-btn:hover { background: var(--warm-mid); }
+    .submit-btn:active { transform: scale(0.99); }
+
+    .form-note { font-size: 0.8rem; color: rgba(92,61,46,0.6); margin-top: 16px; text-align: center; }
+
+    /* SUCCESS MESSAGE */
+    .success-msg { display: none; background: var(--warm-cream); border-radius: 16px; padding: 48px 40px; border-left: 4px solid #4A6741; box-shadow: 0 4px 30px rgba(46,26,14,0.06); text-align: center; }
+    .success-msg h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #4A6741; margin-bottom: 16px; }
+    .success-msg p { color: var(--text-mid); }
+
+    footer { background: var(--warm-dark); color: rgba(253,246,236,0.5); text-align: center; padding: 40px 30px; font-size: 0.85rem; letter-spacing: 1px; margin-top: 0; }
+    footer span { color: var(--warm-gold); }
+
+    @media (max-width: 600px) {
+      .content { padding: 40px 20px; }
+      .form-card { padding: 32px 20px; }
+      body { font-size: 16px; }
+      .lang-bar { top: 10px; right: 10px; }
+    }
+  </style>
+</head>
+<body class="sv">
+
+  <div class="lang-bar">
+    <a href="index.html" class="back-btn">&#8592; Meny</a>
+    <button class="lang-btn active" onclick="setLang('sv')">SV</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  </div>
+
+  <div class="hero">
+    <p class="hero-label">Jan Tingström</p>
+    <h1>
+      <span data-lang-inline="sv">Kontakt</span>
+      <span data-lang-inline="en">Contact</span>
+    </h1>
+    <p class="hero-tagline">
+      <span data-lang-inline="sv">Hör av dig</span>
+      <span data-lang-inline="en">Get in touch</span>
+    </p>
+  </div>
+
+  <div class="content">
+
+    <!-- SVENSKA -->
+    <div data-lang="sv">
+      <p class="section-label">Kontaktformulär</p>
+      <h2>Skriv till mig</h2>
+
+      <div class="form-card" id="form-container-sv">
+        <form action="https://formspree.io/f/mykbzywa" method="POST" onsubmit="handleSubmit(event, 'sv')">
+          <input type="hidden" name="_language" value="sv">
+          <!-- Honeypot spam-skydd -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="form-group">
+            <label for="name-sv">Namn</label>
+            <input type="text" id="name-sv" name="name" placeholder="Ditt namn" required>
+          </div>
+          <div class="form-group">
+            <label for="email-sv">E-post</label>
+            <input type="email" id="email-sv" name="email" placeholder="din@epost.se" required>
+          </div>
+          <div class="form-group">
+            <label for="phone-sv">Telefon</label>
+            <input type="tel" id="phone-sv" name="phone" placeholder="070-000 00 00">
+          </div>
+          <div class="form-group">
+            <label for="message-sv">Meddelande</label>
+            <textarea id="message-sv" name="message" placeholder="Skriv ditt meddelande här..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Skicka meddelande</button>
+          <p class="form-note">Skyddas av Formspree. Dina uppgifter delas inte med tredje part.</p>
+        </form>
+      </div>
+      <div class="success-msg" id="success-sv">
+        <h3>Tack!</h3>
+        <p>Ditt meddelande har skickats. Jag återkommer så snart jag kan.</p>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div data-lang="en">
+      <p class="section-label">Contact form</p>
+      <h2>Write to me</h2>
+
+      <div class="form-card" id="form-container-en">
+        <form action="https://formspree.io/f/mykbzywa" method="POST" onsubmit="handleSubmit(event, 'en')">
+          <input type="hidden" name="_language" value="en">
+          <!-- Honeypot spam protection -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="form-group">
+            <label for="name-en">Name</label>
+            <input type="text" id="name-en" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email-en">Email</label>
+            <input type="email" id="email-en" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone-en">Phone</label>
+            <input type="tel" id="phone-en" name="phone" placeholder="+46 70 000 00 00">
+          </div>
+          <div class="form-group">
+            <label for="message-en">Message</label>
+            <textarea id="message-en" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send message</button>
+          <p class="form-note">Protected by Formspree. Your details are not shared with third parties.</p>
+        </form>
+      </div>
+      <div class="success-msg" id="success-en">
+        <h3>Thank you!</h3>
+        <p>Your message has been sent. I'll get back to you as soon as I can.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&#169; Jan Tingström &nbsp;&#183;&nbsp; <span>www.tingstrom.se</span></p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.body.className = lang;
+      sessionStorage.setItem('lang', lang);
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+      });
+    }
+    var saved = sessionStorage.getItem('lang');
+    if (saved) setLang(saved);
+
+    function handleSubmit(e, lang) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          document.getElementById('form-container-' + lang).style.display = 'none';
+          document.getElementById('success-' + lang).style.display = 'block';
+        } else {
+          alert(lang === 'sv' ? 'Något gick fel. Försök igen.' : 'Something went wrong. Please try again.');
+        }
+      }).catch(function() {
+        alert(lang === 'sv' ? 'Något gick fel. Försök igen.' : 'Something went wrong. Please try again.');
+      });
+    }
+  </script>
+
+<!-- Default Statcounter code for JanTingstrom -->
+<script type="text/javascript">
+var sc_project=13212970; 
+var sc_invisible=1; 
+var sc_security="a6743294"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="free web stats"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13212970/0/a6743294/1/"
+alt="free web stats"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
