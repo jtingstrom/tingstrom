@@ -22,6 +22,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="ro_RO">
   <meta property="book:author" content="Jan Tingström">
 
   <!-- Twitter Card -->
@@ -73,9 +74,11 @@
     [data-lang] { display: none; }
     body.sv [data-lang="sv"] { display: block; }
     body.en [data-lang="en"] { display: block; }
+    body.ro [data-lang="ro"] { display: block; }
     [data-lang-inline] { display: none; }
     body.sv [data-lang-inline="sv"] { display: inline; }
     body.en [data-lang-inline="en"] { display: inline; }
+    body.ro [data-lang-inline="ro"] { display: inline; }
     .hero { min-height: 100vh; background: linear-gradient(135deg, #2E1A0E 0%, #7C4A1E 50%, #E8833A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 30px; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%); top: -100px; right: -100px; }
     .hero-subtitle-top { font-weight: 300; font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,200,66,0.8); margin-bottom: 30px; animation: fadeUp 1s ease forwards 0.3s; opacity: 0; }
@@ -124,25 +127,30 @@
     <a href="index.html" class="back-btn">&#8592; Meny</a>
     <button class="lang-btn active" onclick="setLang('sv')">SV</button>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ro')">RO</button>
   </div>
 
   <div class="hero">
     <p class="hero-subtitle-top">
       <span data-lang-inline="sv">Att leva med cancer stadie 4</span>
       <span data-lang-inline="en">Living with stage 4 cancer</span>
+      <span data-lang-inline="ro">Viața cu cancer stadiul 4</span>
     </p>
     <h1>
       <span data-lang-inline="sv">Resan</span>
       <span data-lang-inline="en">The Journey</span>
+      <span data-lang-inline="ro">Călătoria</span>
     </h1>
     <p class="hero-tagline">
       <span data-lang-inline="sv">Från diagnos och genom det första året</span>
       <span data-lang-inline="en">From diagnosis through the first year</span>
+      <span data-lang-inline="ro">De la diagnostic și prin primul an</span>
     </p>
     <p class="hero-author">Jan Tingström</p>
     <p class="scroll-hint">
       <span data-lang-inline="sv">&#8595; Läs vidare</span>
       <span data-lang-inline="en">&#8595; Read on</span>
+      <span data-lang-inline="ro">&#8595; Citește mai departe</span>
     </p>
   </div>
 
@@ -162,6 +170,14 @@
       <a href="#kap4">The medication</a>
       <a href="#kap5">The treatment holds</a>
       <a href="#kap6">A new kind of everyday</a>
+    </div>
+    <div data-lang-inline="ro">
+      <a href="#kap1">Diagnosticul</a>
+      <a href="#kap2">Teama</a>
+      <a href="#kap3">Îngrijirea</a>
+      <a href="#kap4">Medicația</a>
+      <a href="#kap5">Tratamentul ține</a>
+      <a href="#kap6">O nouă normalitate</a>
     </div>
   </nav>
 
@@ -191,6 +207,15 @@
         <p>A special thank you to my wife Mirabella, whose support has meant everything &#8211; from the very first day, all the way to here.</p>
         <p><em>I'm not writing this to give answers. I'm writing it so that others in the same situation don't have to feel alone.</em></p>
         <p>&#8211; Jan</p>
+      </div>
+      <div data-lang="ro">
+        <p class="section-label">Prefață</p>
+        <h2>Călătoria pe care nu am ales-o</h2>
+        <p>Această carte începe acolo unde viața s-a schimbat &#8211; în momentul în care un medic a spus ceva ce nu am putut cu adevărat să înțeleg.</p>
+        <p><strong>Cancer stadiul 4. Răspândit. Incurabil.</strong></p>
+        <p>Am încercat să scriu ce s-a întâmplat după aceea. Nu pentru că este o poveste frumoasă &#8211; nu este. Dar pentru că este una adevărată. Drumul de la diagnostic până la viața de astăzi nu a fost drept. A existat frică, efecte secundare, oboseală și zile când totul părea imposibil. Dar a existat și ceva neașteptat &#8211; îngrijire care a funcționat cu adevărat, zile care s-au dovedit bune, și un fel de viață obișnuită pe care o regăsești, în ciuda tuturor.</p>
+        <p>Un mulțumire specială soției mele Mirabella, al cărei sprijin a însemnat totul &#8211; din prima zi și până aici.</p>
+        <p><em>Nu scriu asta pentru a da răspunsuri. Scriu pentru ca alții în aceeași situație să nu se simtă singuri.</em></p>
       </div>
     </div>
   </div>
@@ -247,7 +272,14 @@
         <p>The procedure was extremely painful. Morphine was needed throughout.</p>
         <p><em>That was the moment &#8211; not when the phone rang, not when the paperwork arrived &#8211; when it really hit home how serious this was.</em></p>
       </div>
-    </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 1</p>
+        <h2>Ziua \u00een care totul s-a schimbat</h2>
+        <p>\u00cencepe cu ceva mic. O r\u0103ceal\u0103 care nu trece. Apoi vine vestea &#8211; la telefon. Nu exist\u0103 nimeni \u00een camer\u0103. Doar o voce care spune ceva ce nu po\u021bi cu adev\u0103rat s\u0103 \u00een\u021belegi.</p>
+        <p>Fiul nostru avea nou\u0103 ani. Suficient de mare ca s\u0103 \u00eentre\u021beag\u0103 c\u0103 ceva era grav, prea mic pentru a purta asta. Ro\u021bnografia a ar\u0103tat c\u0103 se acumulase lichid \u00een un pl\u0103m\u00e2n. Nou\u0103 zile de spital. Trei litri de lichid drena\u021bi din pl\u0103m\u00e2nul drept.</p>
+        <p>Trei litri. Este greu de imaginat c\u0103 corpul poate re\u021bine at\u00e2ta f\u0103r\u0103 s\u0103 \u00eentelegi c\u00e2t de bolnav e\u0219ti cu adev\u0103rat. A urmat pleurodeza &#8211; o procedur\u0103 extrem de duroas\u0103 care a necesitat morfin\u0103.</p>
+        <p><em>Acela a fost momentul &#8211; nu c\u00e2nd a sunat telefonul &#8211; c\u00e2nd a devenit cu adev\u0103rat clar c\u00e2t de grav era totul.</em></p>
+      </div>
 
     <!-- KAP 2 -->
     <div class="chapter" id="kap2">
@@ -272,6 +304,14 @@
         <p>Lung cancer has low survival rates &#8211; that's well known. But what you didn't know then, and what nobody told you, is that many people live with this illness for years. It's not a cure. But it's not the immediate death sentence it felt like, either.</p>
         <p>That realisation didn't come from the healthcare system. It came later, from talking to others in the same situation &#8211; people who'd been living with the diagnosis for years. That's when the picture started to look different.</p>
         <p><em>The fear never fully goes. But it shifts when you understand that you might have more time than you thought.</em></p>
+
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 2</p>
+        <h2>Teama care rămâne</h2>
+        <p>Odată ce diagnosticul este confirmat, teama nu dispare &#8211; își schimbă doar forma. La început totul se învârte în jurul unei singure întrebări: o să mor?</p>
+        <p>Nimeni nu a explicat ce însemna diagnosticul în practică. Ai rămas cu frica și întrebările tale. Această realizare a venit mai târziu, vorbind cu alții în aceeași situație.</p>
+        <p><em>Teama nu dispare niciodată complet. Dar se schimbă când întelegi că poți avea mai mult timp decât ai crezut.</em></p>
+      </div>
       </div>
     </div>
 
@@ -300,6 +340,13 @@
         <p>The more frequent check-ups meant you weren't just drifting between appointments, waiting. And with the study came a contact nurse &#8211; someone to call, someone who gets back to you, someone who takes your questions seriously whether they're big or small.</p>
         <p>Counselling was also on offer. That's a good thing to have available, and for some people it makes a real difference. For me personally, it wasn't the comfort I was looking for. And when it came to how to handle things with a child &#8211; how to talk to your son about what's happening &#8211; there was nothing the healthcare system could really offer. That was ours to figure out.</p>
         <p><em>That's not a criticism. It's just a reminder that healthcare, however good it is, can't give you everything.</em></p>
+
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 3</p>
+        <h2>Îngrijirea</h2>
+        <p>La Sahlgrenska a fost diferit. Asistentele te tratau ca pe o persoană, nu ca pe un număr de dosar. Mai târziu ai participat la un studiu cu controale la două luni &#8211; și a venit o asistentă de contact, cineva de sunat când ai întrebări.</p>
+        <p><em>Aceasta nu este o critică. Este doar o reamintire că îngrijirea medicală, oricât de bună ar fi, nu poate oferi totul.</em></p>
+      </div>
       </div>
     </div>
 
@@ -328,6 +375,13 @@
         <p>But the side effects come. Not all at once &#8211; they creep up slowly. First your stomach. Then the tiredness arrives, and it's not ordinary tiredness &#8211; it's fatigue. A weight in the body that sleep doesn't shift. The stomach problems and the fatigue are just part of it. There's more, and it all peaks somewhere around three to four months in.</p>
         <p>Another side effect you're not prepared for: taste changes. Not everything &#8211; but enough. Things you've always loved can suddenly taste completely wrong. Not different in a neutral way &#8211; just wrong. Some things you stop eating entirely. Not because you decide to, but because your body simply won't anymore.</p>
         <p><em>You grieve that too. It sounds strange, missing a taste &#8211; but you do. That's when you understand what the treatment is really costing. But the alternative &#8211; no treatment at all &#8211; would have been worse.</em></p>
+
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 4</p>
+        <h2>Medicația</h2>
+        <p>Un tratament țintat &#8211; o tabletă pe zi. Sună simplu. Dar efectele secundare vin încet: stomacul, oboseala profundă, schimbări de gust. Lucruri pe care le-ai iubit întotdeauna pot gusta complet diferit.</p>
+        <p><em>Atunci întelegi cu adevărat ce costă tratamentul. Dar alternativa ar fi fost mai rea.</em></p>
+      </div>
       </div>
     </div>
 
@@ -350,6 +404,13 @@
         <p>The first review, two months after treatment started, was the best one. The tumour had shrunk significantly. That was something real to hold on to &#8211; proof the medication was working.</p>
         <p>The reviews since then have continued to show improvement, but more slowly. And the most recent one showed barely any change at all.</p>
         <p><em>It's hard to know what to make of that. The treatment's holding &#8211; but for how long?</em></p>
+
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 5</p>
+        <h2>Tratamentul ține</h2>
+        <p>La fiecare două luni: o tomografie și analize. Prima evaluare a fost cea mai bună &#8211; tumoarea se micșorase semnificativ. Evaluarările următoare au continuat să arate îmbunătățiri, dar mai lent.</p>
+        <p><em>Este greu de știut ce să crezi. Tratamentul ține &#8211; dar cât timp?</em></p>
+      </div>
       </div>
     </div>
 
@@ -378,6 +439,13 @@
         <p>Rest isn't optional. Fatigue isn't the kind of tiredness that a good night's sleep fixes &#8211; it's a heaviness that needs space. In the middle of the day. In the middle of the week. In the middle of life.</p>
         <p>And then there's family. You want to be present. You want to be part of everyday life &#8211; not just someone resting in the next room.</p>
         <p><em>Finding the balance between what you need and what you want to be for the people around you &#8211; that might be the hardest part of a new kind of everyday.</em></p>
+
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 6</p>
+        <h2>O nouă normalitate</h2>
+        <p>Viața de zi cu zi este încă acolo, dar nu mai arată cum arăta înainte. Este vorba despre a alege. Odihna nu este opțională &#8211; fatigue-ul are nevoie de spațiu. Și vrei să fii prezent pentru familie.</p>
+        <p><em>Găsirea echilibrului între ceea ce ai nevoie și ceea ce vrei să fii pentru oamenii din jurul tău &#8211; acesta poate fi cel mai greu aspect al unei noi normalități.</em></p>
+      </div>
       </div>
     </div>
 
