@@ -7,12 +7,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Resan av Jan Tingström – Att leva med cancer, Bok 2</title>
   <meta name="description" content="Från diagnos och genom det första året med cancer stadie 4. Om rädslan, vården, medicineringen och stunderna när behandlingen håller. Av Jan Tingström.">
-  <meta name="keywords" content="cancer stadie 4, diagnos, cancerresa, första året med cancer, rädsla, vård, medicinering, Jan Tingström, resan, att leva med cancer">
   <meta name="author" content="Jan Tingström">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.tingstrom.se/bok02.html">
-
-  <!-- Open Graph -->
+  <meta name="keywords" content="cancer stadie 4, diagnos, cancerresa, rädsla, vård, medicinering, Jan Tingström">
+  <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
   <meta property="og:type" content="book">
   <meta property="og:title" content="Resan av Jan Tingström – Att leva med cancer, Bok 2">
   <meta property="og:description" content="Från diagnos och genom det första året med cancer stadie 4. Om rädslan, vården och stunderna när behandlingen håller.">
@@ -22,38 +21,26 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="ro_RO">
   <meta property="book:author" content="Jan Tingström">
-
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Resan av Jan Tingström – Att leva med cancer, Bok 2">
-  <meta name="twitter:description" content="Från diagnos och genom det första året med cancer stadie 4. Om rädslan, vården och stunderna när behandlingen håller.">
-
+  <meta name="twitter:description" content="Från diagnos och genom det första året med cancer stadie 4.">
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Book",
     "name": "Resan",
-    "alternativeName": "The Journey",
-    "author": {
-      "@type": "Person",
-      "name": "Jan Tingström",
-      "url": "https://www.tingstrom.se/"
-    },
-    "description": "Från diagnos och genom det första året med cancer stadie 4. Om rädslan, vården, medicineringen och stunderna när behandlingen håller.",
-    "inLanguage": ["sv", "en"],
+    "alternativeName": ["The Journey", "Călătoria"],
+    "author": {"@type": "Person", "name": "Jan Tingström", "url": "https://www.tingstrom.se/"},
+    "inLanguage": ["sv", "en", "ro"],
     "url": "https://www.tingstrom.se/bok02.html",
-    "isPartOf": {
-      "@type": "BookSeries",
-      "name": "Att leva med cancer"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Cancer"
-    }
+    "isPartOf": {"@type": "BookSeries", "name": "Att leva med cancer"},
+    "about": {"@type": "MedicalCondition", "name": "Cancer"}
   }
   </script>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -73,9 +60,11 @@
     [data-lang] { display: none; }
     body.sv [data-lang="sv"] { display: block; }
     body.en [data-lang="en"] { display: block; }
+    body.ro [data-lang="ro"] { display: block; }
     [data-lang-inline] { display: none; }
     body.sv [data-lang-inline="sv"] { display: inline; }
     body.en [data-lang-inline="en"] { display: inline; }
+    body.ro [data-lang-inline="ro"] { display: inline; }
     .hero { min-height: 100vh; background: linear-gradient(135deg, #2E1A0E 0%, #7C4A1E 50%, #E8833A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 30px; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%); top: -100px; right: -100px; }
     .hero-subtitle-top { font-weight: 300; font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,200,66,0.8); margin-bottom: 30px; animation: fadeUp 1s ease forwards 0.3s; opacity: 0; }
@@ -124,25 +113,30 @@
     <a href="index.html" class="back-btn">&#8592; Meny</a>
     <button class="lang-btn active" onclick="setLang('sv')">SV</button>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ro')">RO</button>
   </div>
 
   <div class="hero">
     <p class="hero-subtitle-top">
       <span data-lang-inline="sv">Att leva med cancer stadie 4</span>
       <span data-lang-inline="en">Living with stage 4 cancer</span>
+      <span data-lang-inline="ro">Viața cu cancer stadiul 4</span>
     </p>
     <h1>
       <span data-lang-inline="sv">Resan</span>
       <span data-lang-inline="en">The Journey</span>
+      <span data-lang-inline="ro">Călătoria</span>
     </h1>
     <p class="hero-tagline">
       <span data-lang-inline="sv">Från diagnos och genom det första året</span>
       <span data-lang-inline="en">From diagnosis through the first year</span>
+      <span data-lang-inline="ro">De la diagnostic și prin primul an</span>
     </p>
     <p class="hero-author">Jan Tingström</p>
     <p class="scroll-hint">
       <span data-lang-inline="sv">&#8595; Läs vidare</span>
       <span data-lang-inline="en">&#8595; Read on</span>
+      <span data-lang-inline="ro">&#8595; Citește mai departe</span>
     </p>
   </div>
 
@@ -162,6 +156,14 @@
       <a href="#kap4">The medication</a>
       <a href="#kap5">The treatment holds</a>
       <a href="#kap6">A new kind of everyday</a>
+    </div>
+    <div data-lang-inline="ro">
+      <a href="#kap1">Diagnosticul</a>
+      <a href="#kap2">Teama</a>
+      <a href="#kap3">Îngrijirea</a>
+      <a href="#kap4">Medicația</a>
+      <a href="#kap5">Tratamentul ține</a>
+      <a href="#kap6">O nouă normalitate</a>
     </div>
   </nav>
 
@@ -191,6 +193,15 @@
         <p>A special thank you to my wife Mirabella, whose support has meant everything &#8211; from the very first day, all the way to here.</p>
         <p><em>I'm not writing this to give answers. I'm writing it so that others in the same situation don't have to feel alone.</em></p>
         <p>&#8211; Jan</p>
+      </div>
+      <div data-lang="ro">
+        <p class="section-label">Prefață</p>
+        <h2>Călătoria pe care nu am ales-o</h2>
+        <p>Această carte începe acolo unde viața s-a schimbat &#8211; în momentul în care un medic a spus ceva ce nu am putut cu adevărat să înțeleg.</p>
+        <p><strong>Cancer stadiul 4. Răspândit. Incurabil.</strong></p>
+        <p>Am încercat să scriu ce s-a întâmplat după aceea. Nu pentru că este o poveste frumoasă, ci pentru că este una adevărată. A existat frică, efecte secundare, oboseală și zile când totul părea imposibil. Dar a existat și ceva neașteptat &#8211; îngrijire care a funcționat, zile bune și un fel de viață obișnuită pe care o regăsești.</p>
+        <p>Un mulțumire specială soției mele Mirabella, al cărei sprijin a însemnat totul.</p>
+        <p><em>Nu scriu asta pentru a da răspunsuri. Scriu pentru ca alții în aceeași situație să nu se simtă singuri.</em></p>
       </div>
     </div>
   </div>
@@ -247,6 +258,16 @@
         <p>The procedure was extremely painful. Morphine was needed throughout.</p>
         <p><em>That was the moment &#8211; not when the phone rang, not when the paperwork arrived &#8211; when it really hit home how serious this was.</em></p>
       </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 1</p>
+        <h2>Ziua în care totul s-a schimbat</h2>
+        <p>Începe cu ceva mic. O răceală care nu trece. Nu te îngrijorezi prea mult &#8211; corpul mai face și el figuri uneori.</p>
+        <p>Apoi vine vestea &#8211; la telefon. Nu există nimeni în cameră. Doar o voce care spune ceva ce nu poți cu adevărat să înțelegi, și apoi tăcere.</p>
+        <p>Primul gând după ce am auzit nu a fost despre tratament. A fost: cum îi spui copilului tău? Fiul nostru avea nouă ani. Suficient de mare ca să întrețeagă că ceva era grav, prea mic pentru a purta asta.</p>
+        <p>Roțnografia a arătat că se acumulase lichid în un plămân. Nouă zile de spital. Trei litri de lichid drenați din plămânul drept. Trei litri &#8211; este greu de imaginat că corpul poate reține atâta fără să întelegi cât de bolnav ești cu adevărat.</p>
+        <p>Pentru a preveni reacumularea lichidului a urmat o procedură numită pleurodeză. Extrem de duroasă. A necesitat morfină pe tot parcursul.</p>
+        <p><em>Acela a fost momentul &#8211; nu când a sunat telefonul &#8211; când a devenit cu adevărat clar cât de grav era totul.</em></p>
+      </div>
     </div>
 
     <!-- KAP 2 -->
@@ -272,6 +293,15 @@
         <p>Lung cancer has low survival rates &#8211; that's well known. But what you didn't know then, and what nobody told you, is that many people live with this illness for years. It's not a cure. But it's not the immediate death sentence it felt like, either.</p>
         <p>That realisation didn't come from the healthcare system. It came later, from talking to others in the same situation &#8211; people who'd been living with the diagnosis for years. That's when the picture started to look different.</p>
         <p><em>The fear never fully goes. But it shifts when you understand that you might have more time than you thought.</em></p>
+      </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 2</p>
+        <h2>Teama care rămâne</h2>
+        <p>Odată ce diagnosticul este confirmat, teama nu dispare &#8211; își schimbă doar forma.</p>
+        <p>La început, totul se învârte în jurul unei singure întrebări: o să mor? Și aceeață întrebare trage altele cu ea. Cât timp mai am? Voi apuca să-mi văd fiul crescut?</p>
+        <p>Nimeni nu a explicat ce însemna diagnosticul în practică. Ai rămas cu frica și întrebările tale. În acel vid, imaginația umple cel mai rău scenariu.</p>
+        <p>Această realizare nu a venit din sistemul de sănătate. A venit mai târziu, vorbind cu alții în aceeași situație &#8211; oameni care trăiau cu diagnosticul de ani de zile.</p>
+        <p><em>Teama nu dispare niciodată complet. Dar se schimbă când întelegi că poți avea mai mult timp decât ai crezut.</em></p>
       </div>
     </div>
 
@@ -301,6 +331,15 @@
         <p>Counselling was also on offer. That's a good thing to have available, and for some people it makes a real difference. For me personally, it wasn't the comfort I was looking for. And when it came to how to handle things with a child &#8211; how to talk to your son about what's happening &#8211; there was nothing the healthcare system could really offer. That was ours to figure out.</p>
         <p><em>That's not a criticism. It's just a reminder that healthcare, however good it is, can't give you everything.</em></p>
       </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 3</p>
+        <h2>Îngrijirea</h2>
+        <p>Nu toată îngrijirea medicală este la fel. Prima întâlnire &#8211; la medicul de familie, cu o răceală care nu trecea &#8211; s-a terminat cu medicament pentru tuse. Că s-a dovedit a fi cancer pulmonar stadiul 4 spune ceva despre cât de greu poate fi să depistezi ce se ascunde în spatele lucrurilor obișnuite.</p>
+        <p>La Sahlgrenska a fost diferit. Asistentele erau atente într-un mod la care nu te așteptai. Te tratau ca pe o persoană, nu ca pe un număr de dosar.</p>
+        <p>Mai târziu ai participat la un studiu cu controale la două luni în loc de trei. A venit o asistentă de contact &#8211; cineva de sunat, cineva care răspunde, cineva care ia întrebările tale în serios.</p>
+        <p>S-a oferit și sprijin prin consiliere. Bun de avut la dispoziție. Dar când era vorba de cum să gestionezi situația cu un copil, nu era nimic ce sistemul medical putea oferi cu adevărat.</p>
+        <p><em>Aceasta nu este o critică. Este doar o reamintire că îngrijirea medicală, oricât de bună ar fi, nu poate oferi totul.</em></p>
+      </div>
     </div>
 
     <!-- KAP 4 -->
@@ -329,6 +368,15 @@
         <p>Another side effect you're not prepared for: taste changes. Not everything &#8211; but enough. Things you've always loved can suddenly taste completely wrong. Not different in a neutral way &#8211; just wrong. Some things you stop eating entirely. Not because you decide to, but because your body simply won't anymore.</p>
         <p><em>You grieve that too. It sounds strange, missing a taste &#8211; but you do. That's when you understand what the treatment is really costing. But the alternative &#8211; no treatment at all &#8211; would have been worse.</em></p>
       </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 4</p>
+        <h2>Medicația</h2>
+        <p>Înainte ca tratamentul să înceapă, ai timp să-ți fie frică de el. Ai auzit poveștile &#8211; cât de rău se simt oamenii, cum efectele secundare priau viața.</p>
+        <p>Apoi a venit veștea că era disponibil un tratament țintat &#8211; nu chimioterapie în sens tradițional, ci ceva care vizează specific tipul de cancer pe care îl ai. O tabletă pe zi. Sună simplu.</p>
+        <p>Înainte ca tabletele să înceapă, âi iei o săptămână de libertate. Călătorești, încerci să fii prezent, încerci să te bucuri. Dar gândurile sunt mereu acolo în fundal.</p>
+        <p>La început, nimic. Totul se simte ca înainte. Dar efectele secundare vin încet: stomacul, oboseala profundă &#8211; nu oboseală obișnuită, ci fatigue, o greutate pe care somnul nu o rezolvă. Și gusturile se schimbă. Lucruri pe care le-ai iubit întotdeauna pot gusta complet diferit.</p>
+        <p><em>Îli e dor și de asta. Sună ciudat să îti fie dor de un gust &#8211; dar îți este. Atunci întelegi cu adevărat ce costă tratamentul. Dar alternativa &#8211; fără niciun tratament &#8211; ar fi fost mai rea.</em></p>
+      </div>
     </div>
 
     <!-- KAP 5 -->
@@ -350,6 +398,15 @@
         <p>The first review, two months after treatment started, was the best one. The tumour had shrunk significantly. That was something real to hold on to &#8211; proof the medication was working.</p>
         <p>The reviews since then have continued to show improvement, but more slowly. And the most recent one showed barely any change at all.</p>
         <p><em>It's hard to know what to make of that. The treatment's holding &#8211; but for how long?</em></p>
+      </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 5</p>
+        <h2>Tratamentul ține</h2>
+        <p>La fiecare două luni: o tomografie cu contrast și analize de sânge. La început părea coșpleșitor. Acum este doar rutină. Nu te mai gândești prea mult la ea.</p>
+        <p>Ceea ce nu devine rutină este săptămâna după. Atunci vine anxietatea. S-a îngrășat? A mutat cancerul, a devenit rezistent la medicament?</p>
+        <p>Prima evaluare, la două luni după ce tratamentul a început, a fost cea mai bună. Tumoarea se micșorase semnificativ. Ceva real de care să te agți &#8211; dovada că medicamentul funcționa.</p>
+        <p>Evaluarările următoare au continuat să arate îmbunătățiri, dar mai lent. Iar cea mai recentă a arătat abia vreo schimbare.</p>
+        <p><em>Este greu de știut ce să crezi. Tratamentul ține &#8211; dar cât timp?</em></p>
       </div>
     </div>
 
@@ -379,6 +436,16 @@
         <p>And then there's family. You want to be present. You want to be part of everyday life &#8211; not just someone resting in the next room.</p>
         <p><em>Finding the balance between what you need and what you want to be for the people around you &#8211; that might be the hardest part of a new kind of everyday.</em></p>
       </div>
+      <div data-lang="ro">
+        <p class="chapter-number">Capitolul 6</p>
+        <h2>O nouă normalitate</h2>
+        <p>Viața de zi cu zi este încă acolo. Dar nu mai arată cum arăta înainte.</p>
+        <p>Nu mai este vorba despre a face totul. Este vorba despre a alege. Și alegerile sunt mai grele decât par &#8211; pentru că corpul tău are nevoie atât de mișcare, cât și de odihnă, iar în zi sunt tot douăzeci și patru de ore.</p>
+        <p>Exercițiile contează. Nu ca să te forțezi sau să performezi &#8211; ci pentru că mișcarea se simte mai bine decât nemșcarea, și pentru că este unul dintre puținele momente în care te simți din nou ca tine însuți. Dar costă ceva.</p>
+        <p>Odihna nu este opțională. Fatigue-ul nu este genul de oboseală pe care o rezolvă o noapte bună de somn &#8211; este o greutate care are nevoie de spațiu. În mijlocul zilei. În mijlocul săptămânii. În mijlocul vieții.</p>
+        <p>Și apoi este familia. Vrei să fii prezent. Vrei să faci parte din viața de zi cu zi &#8211; nu doar cineva care se odihnește în camera alăturată.</p>
+        <p><em>Găsirea echilibrului între ceea ce ai nevoie și ceea ce vrei să fii pentru oamenii din jurul tău &#8211; acesta poate fi cel mai greu aspect al unei noi normalități.</em></p>
+      </div>
     </div>
 
   </div>
@@ -402,11 +469,19 @@
         <div class="closing-quote">"The treatment's holding.<br>And for now, that's enough."</div>
         <p class="closing-author">Jan Tingström</p>
       </div>
+      <div data-lang="ro">
+        <p class="section-label">Un cuvânt final</p>
+        <h2>Viața continuă &#8211; într-un mod nou</h2>
+        <p>Această broșură a fost scrisă din interiorul primului an cu un diagnostic de cancer. Nu pentru că este o poveste cu un sfârșit clar &#8211; ci pentru că călătoria continuă, și poate o parte din ea va fi familiară.</p>
+        <p>Nu înveți să trăiești cu cancerul. Înveți să trăiești cu nesiguranța. Nu sunt același lucru.</p>
+        <div class="closing-quote">„Tratamentul ține.<br>Și deocamdată, asta e de ajuns.”</div>
+        <p class="closing-author">Jan Tingström</p>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>&#169; Jan Tingström &nbsp;&#183;&nbsp; <span><span data-lang-inline="sv">Resan &#8211; från diagnos och genom det första året</span><span data-lang-inline="en">The Journey &#8211; from diagnosis through the first year</span></span></p>
+    <p>&#169; Jan Tingström &nbsp;&#183;&nbsp; <span><span data-lang-inline="sv">Resan &#8211; från diagnos och genom det första året</span><span data-lang-inline="en">The Journey &#8211; from diagnosis through the first year</span><span data-lang-inline="ro">Călătoria &#8211; de la diagnostic prin primul an</span></span></p>
   </footer>
 
   <script>
@@ -417,27 +492,23 @@
     function setLang(lang) {
       document.body.className = lang;
       sessionStorage.setItem('lang', lang);
+      sessionStorage.setItem('lang', lang);
       document.querySelectorAll('.lang-btn').forEach(function(btn) {
         btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
       });
     }
+    var saved = sessionStorage.getItem('lang');
+    if (saved) setLang(saved);
   </script>
 
-<!-- Default Statcounter code for JanTingstrom -->
+<!-- Default Statcounter code -->
 <script type="text/javascript">
-var sc_project=13212970; 
-var sc_invisible=1; 
-var sc_security="a6743294"; 
+var sc_project=13212970;
+var sc_invisible=1;
+var sc_security="a6743294";
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="free web stats"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/13212970/0/a6743294/1/"
-alt="free web stats"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="free web stats" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13212970/0/a6743294/1/" alt="free web stats" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
 </html>

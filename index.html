@@ -22,6 +22,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="sv_SE">
   <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="ro_RO">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -66,9 +67,11 @@
     [data-lang] { display: none; }
     body.sv [data-lang="sv"] { display: block; }
     body.en [data-lang="en"] { display: block; }
+    body.ro [data-lang="ro"] { display: block; }
     [data-lang-inline] { display: none; }
     body.sv [data-lang-inline="sv"] { display: inline; }
     body.en [data-lang-inline="en"] { display: inline; }
+    body.ro [data-lang-inline="ro"] { display: inline; }
 
     .hero { min-height: 35vh; background: linear-gradient(135deg, #2E1A0E 0%, #7C4A1E 50%, #E8833A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 30px; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%); top: -100px; right: -100px; }
@@ -99,6 +102,16 @@
     footer { background: var(--warm-dark); color: rgba(253,246,236,0.5); text-align: center; padding: 40px 30px; font-size: 0.85rem; letter-spacing: 1px; }
     footer span { color: var(--warm-gold); }
 
+    .collab-section { background: #1A0F07; padding: 50px 30px; }
+    .collab-inner { max-width: 800px; margin: 0 auto; }
+    .collab-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,200,66,0.6); font-weight: 700; text-align: center; margin-bottom: 30px; }
+    .collab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .collab-card { display: flex; align-items: center; gap: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 16px 20px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .collab-card:hover { background: rgba(232,131,58,0.1); border-color: rgba(232,131,58,0.3); }
+    .collab-logo { width: 40px; height: 40px; border-radius: 8px; background: var(--warm-orange); display: flex; align-items: center; justify-content: center; font-family: 'Lato', sans-serif; font-size: 0.7rem; font-weight: 700; color: white; letter-spacing: 1px; flex-shrink: 0; }
+    .collab-name { font-family: 'Lato', sans-serif; font-size: 0.85rem; font-weight: 700; color: rgba(253,246,236,0.85); margin-bottom: 2px; }
+    .collab-desc { font-size: 0.75rem; color: rgba(253,246,236,0.4); font-weight: 300; margin: 0; }
+
     @media (max-width: 600px) { .content { padding: 40px 20px; } body { font-size: 16px; } .lang-bar { top: 10px; right: 10px; } }
   </style>
 </head>
@@ -107,14 +120,17 @@
   <div class="lang-bar">
     <button class="lang-btn active" onclick="setLang('sv')">SV</button>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ro')">RO</button>
   </div>
 
   <div class="hero">
     <p class="hero-label">Jan Tingström</p>
-    <h1><span data-lang-inline="sv">Att leva med cancer</span><span data-lang-inline="en">Living with Cancer</span></h1>
+    <h1><span data-lang-inline="sv">Att leva med cancer</span><span data-lang-inline="en">Living with Cancer</span>
+      <span data-lang-inline="ro">Viața cu Cancer</span></h1>
     <p class="hero-tagline">
       <span data-lang-inline="sv">Texter skrivna inifrån erfarenheten</span>
       <span data-lang-inline="en">Writings from inside the experience</span>
+      <span data-lang-inline="ro">Scrieri din interiorul experienței</span>
     </p>
   </div>
 
@@ -158,10 +174,29 @@
       </div>
     </div>
 
+    <div data-lang="ro">
+      <p class="section-label">Publicat &#183; <a href="kontakt.html" style="color: var(--warm-orange); text-decoration: none; font-size: 0.75rem; letter-spacing: 4px; font-weight: 700; text-transform: uppercase;">Contact</a></p>
+      <h2>Alege o carte de citit</h2>
+      <div class="books-grid">
+        <a class="book-card" href="bok01.html">
+          <p class="book-number">01</p>
+          <p class="book-title">Să-l vezi pe cel care este bolnav</p>
+          <p class="book-desc">Despre cum te compoți, prezență și ce contează cu adevărat &#8211; scris din interiorul bolii.</p>
+          <span class="book-link">Citește</span>
+        </a>
+        <a class="book-card" href="bok02.html">
+          <p class="book-number">02</p>
+          <p class="book-title">Călătoria</p>
+          <p class="book-desc">De la diagnostic și prin primul an &#8211; despre teamă, îngrijire, medicamente și momentele când tratamentul ține.</p>
+          <span class="book-link">Citește</span>
+        </a>
+      </div>
+    </div>
+
   </div>
 
   <footer>
-    <p>&#169; Jan Tingström &nbsp;&#183;&nbsp; <span>www.tingstrom.se</span> &nbsp;&#183;&nbsp; <a href="kontakt.html" style="color: rgba(253,246,236,0.5); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#F5C842'" onmouseout="this.style.color='rgba(253,246,236,0.5)'""><span data-lang-inline="sv">Kontakt</span><span data-lang-inline="en">Contact</span></a></p>
+    <p>&#169; Jan Tingström &nbsp;&#183;&nbsp; <span>www.tingstrom.se</span> &nbsp;&#183;&nbsp; <a href="kontakt.html" style="color: rgba(253,246,236,0.5); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#F5C842'" onmouseout="this.style.color='rgba(253,246,236,0.5)'""><span data-lang-inline="sv">Kontakt</span><span data-lang-inline="en">Contact</span><span data-lang-inline="ro">Contact</span></a></p>
   </footer>
 
   <script>
